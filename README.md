@@ -1,1 +1,125 @@
-# MSDS
+# MSDS Dataset Released
+
+This is the released version of the MSDS dataset. The dataset can be downloaded in the following ways:
+
+- [Baidu Cloud]()
+- Google Drive
+
+Note: The MSDS dataset can only be used for non-commercial research purposes. For scholar or organization who wants to use the MSDS dataset, please first fill in this [Application Form]() and email it to us (*coming soon*). When submitting the application form to us, please list or attached 1-2 of your publications in the recent 6 years to indicate that you (or your team) do research in the related research fields of handwriting verification, handwriting analysis and recognition, document image processing, and so on. We will give you the decompression password after your letter has been received and approved.
+
+A smaller version of MSDS that has the samples of 20 users can be accessed through the following link:
+
+- [Baidu Cloud](https://pan.baidu.com/s/1On1Hd1ZFa2neUJLw1VqfIg) (Password: utge)
+- Google Drive
+
+## Description
+
+MSDS dataset is a handwriting verification benchmark dataset and consists of two subsets: MSDS-ChS (for Chinese signatures) and MSDS-TDS (for Token Digit Strings). Each subset contains $16080$ samples from $402$ users, with $20$ genuine samples and $20$ skilled forgeries per user. The details are presented below:
+
+| Subset   | Content            | Online | Offline | User    | Genuine Sample                | Skilled Forgery               | Features                        |
+| -------- | ------------------ | :----: | :-----: | ------- | ----------------------------- | ----------------------------- | ------------------------------- |
+| MSDS-ChS | Chinese Signature  |   ✓   |   ✓   | $402$ | $402\times(10 + 10) = 8040$ | $402\times(10 + 10) = 8040$ | $X$,$Y$,$P$,$T$,$I_r$ |
+| MSDS-TDS | Token Digit String |   ✓   |   ✓   | $$402$$ | $402\times(10 + 10) = 8040$ | $402\times(10 + 10) = 8040$ | $X$,$Y$,$P$,$T$,$I_r$ |
+
+$X$,$Y$,$P$,$T$,$I_r$ respectively denote the $x, y$ coordinates, pressure, timestamps, and rendered static images.
+
+The contributions of MSDS include:
+
+- [X] MSDS-ChS is the largest publicly available Chinese signature dataset for signature for signature verification, at least eight times larger than existing ones.
+- [X] MSDS-TDS is the first dataset that covers Token Digit String, which brings a new and effective biometric for handwriting verification.
+- [X] The experimental results indicates that the Token Digit String is more powerful than Chinese signatures, which is inspiring and promising.
+
+## Examples
+
+Some examples of Chinese signatures and Token Digit Strings are shown as follows:![chs](./images/chs_demo.jpg)
+
+![tds](./images/tds_demo.jpg)
+
+## Directory Format
+
+The dataset is organized in the following directory format:
+
+```bash
+├─MSDS
+│  ├─Chinese_Signature
+│  │  ├─session1
+│  │  │  ├─0
+│  │  │  │  ├─images
+│  │  │  │  │  ├─f_0_0.png
+│  │  │  │  │  ├─f_0_1.png
+│  │  │  │  │  ├─...
+│  │  │  │  │  ├─g_0_0.png
+│  │  │  │  │  ├─g_0_1.png
+│  │  │  │  │  └─...
+│  │  │  │  └─series
+│  │  │  │  │  ├─f_0_0.txt
+│  │  │  │  │  ├─f_0_1.txt
+│  │  │  │  │  ├─...
+│  │  │  │  │  ├─g_0_0.txt
+│  │  │  │  │  ├─g_0_1.txt
+│  │  │  │  │  └─...
+│  │  │  ├─1
+│  │  │  │  ├─images
+│  │  │  │  │  ├─f_0_0.png
+│  │  │  │  │  ├─f_0_1.png
+│  │  │  │  │  ├─...
+│  │  │  │  │  ├─g_0_0.png
+│  │  │  │  │  ├─g_0_1.png
+│  │  │  │  │  └─...
+│  │  │  │  └─series
+│  │  │  │  │  ├─f_0_0.txt
+│  │  │  │  │  ├─f_0_1.txt
+│  │  │  │  │  ├─...
+│  │  │  │  │  ├─g_0_0.txt
+│  │  │  │  │  ├─g_0_1.txt
+│  │  │  │  │  └─...
+│  │  │  └─...
+│  │  └─session2
+│  │      ├─...
+│  └─Token_Digit_String
+│  │  ├─session1
+│  │  │  ├─0
+│  │  │  │  ├─images
+│  │  │  │  │  ├─f_0_0.png
+│  │  │  │  │  ├─f_0_1.png
+│  │  │  │  │  ├─...
+│  │  │  │  │  ├─g_0_0.png
+│  │  │  │  │  ├─g_0_1.png
+│  │  │  │  │  └─...
+│  │  │  │  └─series
+│  │  │  │  │  ├─f_0_0.txt
+│  │  │  │  │  ├─f_0_1.txt
+│  │  │  │  │  ├─...
+│  │  │  │  │  ├─g_0_0.txt
+│  │  │  │  │  ├─g_0_1.txt
+│  │  │  │  │  └─...
+│  │  │  ├─1
+│  │  │  │  ├─images
+│  │  │  │  │  ├─f_0_0.png
+│  │  │  │  │  ├─f_0_1.png
+│  │  │  │  │  ├─...
+│  │  │  │  │  ├─g_0_0.png
+│  │  │  │  │  ├─g_0_1.png
+│  │  │  │  │  └─...
+│  │  │  │  └─series
+│  │  │  │  │  ├─f_0_0.txt
+│  │  │  │  │  ├─f_0_1.txt
+│  │  │  │  │  ├─...
+│  │  │  │  │  ├─g_0_0.txt
+│  │  │  │  │  ├─g_0_1.txt
+│  │  │  │  │  └─...
+│  │  │  └─...
+│      └─session2
+│  │      ├─...
+```
+
+- The `Chinese_Signature` folder contains Chinese signatures and `Token_Digit_String` contains Token Digit Strings (TDS).
+- Each of them contains the data in two sessions which is stored in `session1` and `session2`.
+- The users are arranged from `0` to `401`, with online dynamic time series and offline static images provided in `series` and `images`. The time series are saved as `.txt` files and the images are in `.png` format.
+- The naming of each file follows the same format: `flag_user_index`.
+- - `flag` is `f` or `g`. `f` indicates that this file is a skilled forgery, while `g` indicates that it is a genuine sample.
+- - `user` indicates the number of user of this file.
+- - `index` indicates the number of this file (`.txt` or `.png`) in the current folder.
+- - For example, `f_0_0.txt` represents the first file (time series) of all skilled forgeries of the user `0`. `g_5_6.png` represents the seventh file (image) of all genuine samples of the user `5`.
+
+## ToDo
