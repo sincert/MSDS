@@ -14,12 +14,12 @@ A smaller version of MSDS that has the samples of 20 users can be accessed throu
 
 ## Description
 
-MSDS dataset is a handwriting verification benchmark dataset and consists of two subsets: MSDS-ChS (for Chinese signatures) and MSDS-TDS (for Token Digit Strings). Each subset contains $16080$ samples from $402$ users, with $20$ genuine samples and $20$ skilled forgeries per user. The details are presented below:
+MSDS dataset is a handwriting verification benchmark dataset and consists of two subsets: MSDS-ChS (for Chinese signatures) and MSDS-TDS (for Token Digit Strings). Each subset contains 16080 samples from 402 users, with 20 genuine samples and 20 skilled forgeries per user. The details are presented below:
 
-| Subset   | Content            | Online | Offline | User    | Genuine Sample              | Skilled Forgery             | Features              |
-| -------- | ------------------ | :----: | :-----: | ------- | --------------------------- | --------------------------- | --------------------- |
-| MSDS-ChS | Chinese Signature  |   ✓    |    ✓    | $402$   | $402\times(10 + 10) = 8040$ | $402\times(10 + 10) = 8040$ | $X$,$Y$,$P$,$T$,$I_r$ |
-| MSDS-TDS | Token Digit String |   ✓    |    ✓    | $$402$$ | $402\times(10 + 10) = 8040$ | $402\times(10 + 10) = 8040$ | $X$,$Y$,$P$,$T$,$I_r$ |
+| Subset   | Content            | Online | Offline | User | Genuine Sample              | Skilled Forgery             | Features              |
+| -------- | ------------------ | :----: | :-----: | ---- | --------------------------- | --------------------------- | --------------------- |
+| MSDS-ChS | Chinese Signature  |   ✓    |    ✓    | 402  | $402\times(10 + 10) = 8040$ | $402\times(10 + 10) = 8040$ | $X$,$Y$,$P$,$T$,$I_r$ |
+| MSDS-TDS | Token Digit String |   ✓    |    ✓    | 402  | $402\times(10 + 10) = 8040$ | $402\times(10 + 10) = 8040$ | $X$,$Y$,$P$,$T$,$I_r$ |
 
 $X$,$Y$,$P$,$T$,$I_r$ respectively denote the $x, y$ coordinates, pressure, timestamps, and rendered static images.
 
@@ -28,6 +28,26 @@ The contributions of MSDS include:
 - [x] MSDS-ChS is the largest publicly available Chinese signature dataset for signature for signature verification, at least eight times larger than existing ones.
 - [x] MSDS-TDS is the first dataset that covers Token Digit String, which brings a new and effective biometric for handwriting verification.
 - [x] The experimental results indicates that the Token Digit String is more powerful than Chinese signatures, which is inspiring and promising.
+
+# Collection
+
+The data of MSDS was acquired with two types of Android tablets. Both of them have specific stylus. We specifically developed an Android app and the user interface is shown below. Users directly performed handwriting on the tablets specific styluses and the produced information was automatically recorded by the app.
+
+![gui](./images/gui.png)
+
+The data acquisition process is divided into two separate sessions with a time interval of at least 21 days. In each session, users performed writing according to the same procedure: 10 genuine signatures→10 genuine phone numbers→10 forged signatures→10 forged phone numbers.
+
+# Responsible Use
+
+MSDS is collected for handwriting identity verification. Specifically, the MSDS-ChS subset could be exploited in online/offline Chinese signature verification, and the MSDS-TDS subset is intended to be used in online/offline identity verification with Token Digit Strings. In addition, MSDS can be exploited in writer identification.
+
+# Maintenance
+
+Our dataset can be accessed through the aforementioned link. We will occasionally perform maintenance, such as providing data corrections and solving issues raised by developers.
+
+# License
+
+MSDS should be used and distributed under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) Public License](https://creativecommons.org/licenses/by-nc-sa/4.0/) for non-commercial research purposes.
 
 ## Examples
 
