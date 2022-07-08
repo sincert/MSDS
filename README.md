@@ -2,14 +2,14 @@
 
 This is the released version of the MSDS dataset. The dataset can be downloaded in the following ways:
 
-- [Baidu Cloud](https://pan.baidu.com/s/1ZRCg-kdftlk63ccEWKMN8Q) (Password: jdwb)
+- [Baidu Cloud](https://pan.baidu.com/s/1orJTpE0ijtU51Izso3UbbA?pwd=kva8)
 - [Google Drive](https://drive.google.com/file/d/19DKIvScvorr5VR6RPeuU49evmt2rBgng/view?usp=sharing)
 
 Note: The MSDS dataset can only be used for non-commercial research purposes. For scholar or organization who wants to use the MSDS dataset, please first fill in this [Application Form]() and email it to us (*coming soon*). When submitting the application form to us, please list or attached 1-2 of your publications in the recent 6 years to indicate that you (or your team) do research in the related research fields of handwriting verification, handwriting analysis and recognition, document image processing, and so on. We will give you the decompression password after your letter has been received and approved.
 
 A smaller version of MSDS that has the samples of 20 users can be accessed through the following link:
 
-- [Baidu Cloud](https://pan.baidu.com/s/1MG36IcnZaUGclJbdSLMeWA) (Password: 448h)
+- [Baidu Cloud](https://pan.baidu.com/s/18dgtfTxy7Hv1OVSDyE99Vg?pwd=n16w)
 - [Google Drive](https://drive.google.com/file/d/1HCFMFCZPI0I6m--HrBJ4wNbHRRiaZXNL/view?usp=sharing)
 
 ## Description
